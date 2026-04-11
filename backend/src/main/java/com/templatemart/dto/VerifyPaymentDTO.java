@@ -1,0 +1,29 @@
+package com.templatemart.dto;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.*;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class VerifyPaymentDTO {
+    
+    @JsonProperty("razorpay_order_id")
+    private String razorpayOrderId;
+    
+    @JsonProperty("razorpay_payment_id")
+    private String razorpayPaymentId;
+    
+    @JsonProperty("razorpay_signature")
+    private String razorpaySignature;
+    
+    @JsonProperty("user_data")
+    private String userData; // JSON object
+    
+    @JsonProperty("user_name")
+    private String userName;
+    
+    @JsonProperty("user_email")
+    private String userEmail;
+}

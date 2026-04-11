@@ -1,0 +1,395 @@
+{
+  "birthday_template_config": {
+    "fields": [
+      {
+        "id": "name",
+        "type": "text",
+        "label": "Birthday Person Name",
+        "placeholder": "Enter name",
+        "required": true,
+        "validation": {
+          "min": 2,
+          "max": 50,
+          "message": "Name must be between 2 and 50 characters"
+        }
+      },
+      {
+        "id": "age",
+        "type": "text",
+        "label": "Age",
+        "placeholder": "Enter age",
+        "required": true
+      },
+      {
+        "id": "message",
+        "type": "textarea",
+        "label": "Birthday Message",
+        "placeholder": "Write your birthday wishes...",
+        "required": true,
+        "aiSuggestion": true,
+        "validation": {
+          "min": 10,
+          "max": 500,
+          "message": "Message must be between 10 and 500 characters"
+        }
+      },
+      {
+        "id": "primaryColor",
+        "type": "color",
+        "label": "Primary Color",
+        "required": true,
+        "defaultValue": "#FF6B9D"
+      },
+      {
+        "id": "secondaryColor",
+        "type": "color",
+        "label": "Secondary Color",
+        "required": true,
+        "defaultValue": "#FFC93C"
+      },
+      {
+        "id": "imageUrl",
+        "type": "image",
+        "label": "Background Image URL",
+        "placeholder": "https://example.com/image.jpg",
+        "required": false
+      }
+    ]
+  },
+  "wedding_template_config": {
+    "fields": [
+      {
+        "id": "bride",
+        "type": "text",
+        "label": "Bride Name",
+        "placeholder": "Enter bride name",
+        "required": true
+      },
+      {
+        "id": "groom",
+        "type": "text",
+        "label": "Groom Name",
+        "placeholder": "Enter groom name",
+        "required": true
+      },
+      {
+        "id": "date",
+        "type": "date",
+        "label": "Wedding Date",
+        "required": true
+      },
+      {
+        "id": "venue",
+        "type": "text",
+        "label": "Venue",
+        "placeholder": "Enter venue name",
+        "required": true
+      },
+      {
+        "id": "message",
+        "type": "textarea",
+        "label": "Invitation Message",
+        "placeholder": "Write your invitation message...",
+        "required": true,
+        "aiSuggestion": true
+      },
+      {
+        "id": "imageUrl",
+        "type": "image",
+        "label": "Cover Image URL",
+        "placeholder": "https://example.com/image.jpg",
+        "required": false
+      }
+    ]
+  },
+  "event_template_config": {
+    "fields": [
+      {
+        "id": "eventName",
+        "type": "text",
+        "label": "Event Name",
+        "placeholder": "Enter event name",
+        "required": true
+      },
+      {
+        "id": "eventType",
+        "type": "select",
+        "label": "Event Type",
+        "required": true,
+        "options": [
+          { "value": "conference", "label": "Conference" },
+          { "value": "workshop", "label": "Workshop" },
+          { "value": "seminar", "label": "Seminar" },
+          { "value": "meetup", "label": "Meetup" },
+          { "value": "party", "label": "Party" }
+        ]
+      },
+      {
+        "id": "date",
+        "type": "date",
+        "label": "Event Date",
+        "required": true
+      },
+      {
+        "id": "time",
+        "type": "text",
+        "label": "Event Time",
+        "placeholder": "e.g., 6:00 PM",
+        "required": true
+      },
+      {
+        "id": "venue",
+        "type": "text",
+        "label": "Venue",
+        "placeholder": "Enter venue name",
+        "required": true
+      },
+      {
+        "id": "description",
+        "type": "textarea",
+        "label": "Event Description",
+        "placeholder": "Describe your event...",
+        "required": true,
+        "aiSuggestion": true
+      },
+      {
+        "id": "organizerName",
+        "type": "text",
+        "label": "Organizer Name",
+        "placeholder": "Your name",
+        "required": true
+      },
+      {
+        "id": "organizerEmail",
+        "type": "email",
+        "label": "Contact Email",
+        "placeholder": "your@email.com",
+        "required": true
+      },
+      {
+        "id": "organizerPhone",
+        "type": "tel",
+        "label": "Contact Phone",
+        "placeholder": "+91 1234567890",
+        "required": false
+      },
+      {
+        "id": "primaryColor",
+        "type": "color",
+        "label": "Theme Color",
+        "required": true,
+        "defaultValue": "#2563EB"
+      },
+      {
+        "id": "imageUrl",
+        "type": "image",
+        "label": "Event Banner URL",
+        "placeholder": "https://example.com/banner.jpg",
+        "required": false
+      }
+    ]
+  },
+  "portfolio_template_config": {
+    "fields": [
+      {
+        "id": "fullName",
+        "type": "text",
+        "label": "Full Name",
+        "placeholder": "Enter your full name",
+        "required": true
+      },
+      {
+        "id": "title",
+        "type": "text",
+        "label": "Professional Title",
+        "placeholder": "e.g., Full Stack Developer",
+        "required": true
+      },
+      {
+        "id": "bio",
+        "type": "textarea",
+        "label": "Bio",
+        "placeholder": "Tell us about yourself...",
+        "required": true,
+        "aiSuggestion": true
+      },
+      {
+        "id": "email",
+        "type": "email",
+        "label": "Email",
+        "placeholder": "your@email.com",
+        "required": true
+      },
+      {
+        "id": "phone",
+        "type": "tel",
+        "label": "Phone",
+        "placeholder": "+91 1234567890",
+        "required": false
+      },
+      {
+        "id": "skills",
+        "type": "textarea",
+        "label": "Skills (comma-separated)",
+        "placeholder": "React, Node.js, TypeScript",
+        "required": true
+      },
+      {
+        "id": "experience",
+        "type": "textarea",
+        "label": "Experience",
+        "placeholder": "List your work experience...",
+        "required": true
+      },
+      {
+        "id": "education",
+        "type": "textarea",
+        "label": "Education",
+        "placeholder": "Your educational background...",
+        "required": true
+      },
+      {
+        "id": "profileImage",
+        "type": "image",
+        "label": "Profile Image URL",
+        "placeholder": "https://example.com/profile.jpg",
+        "required": false
+      },
+      {
+        "id": "accentColor",
+        "type": "color",
+        "label": "Accent Color",
+        "required": true,
+        "defaultValue": "#6366F1"
+      }
+    ]
+  },
+  "sample_demo_data": {
+    "birthday": {
+      "name": "John Doe",
+      "age": "25",
+      "message": "Wishing you a day filled with happiness and a year filled with joy. Happy Birthday!",
+      "primaryColor": "#FF6B9D",
+      "secondaryColor": "#FFC93C",
+      "imageUrl": "https://images.pexels.com/photos/1729797/pexels-photo-1729797.jpeg"
+    },
+    "wedding": {
+      "bride": "Sarah",
+      "groom": "Michael",
+      "date": "2026-12-31",
+      "venue": "Garden Palace Hotel",
+      "message": "Join us as we celebrate our special day and the beginning of our journey together",
+      "imageUrl": "https://images.pexels.com/photos/265722/pexels-photo-265722.jpeg"
+    },
+    "event": {
+      "eventName": "Tech Conference 2026",
+      "eventType": "conference",
+      "date": "2026-06-15",
+      "time": "9:00 AM - 5:00 PM",
+      "venue": "Convention Center, Mumbai",
+      "description": "Join us for the biggest tech conference of the year featuring industry leaders and innovative workshops.",
+      "organizerName": "Tech Events Inc.",
+      "organizerEmail": "info@techevents.com",
+      "organizerPhone": "+91 9876543210",
+      "primaryColor": "#2563EB",
+      "imageUrl": "https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg"
+    },
+    "portfolio": {
+      "fullName": "Jane Smith",
+      "title": "Senior Full Stack Developer",
+      "bio": "Passionate developer with 8+ years of experience building scalable web applications. Specialized in React, Node.js, and cloud technologies.",
+      "email": "jane.smith@example.com",
+      "phone": "+91 9876543210",
+      "skills": "React, TypeScript, Node.js, PostgreSQL, AWS, Docker, Kubernetes",
+      "experience": "Senior Developer at Tech Corp (2020-Present), Full Stack Developer at StartupXYZ (2017-2020)",
+      "education": "B.Tech in Computer Science, IIT Delhi (2013-2017)",
+      "profileImage": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg",
+      "accentColor": "#6366F1"
+    }
+  },
+  "field_types_reference": {
+    "text": {
+      "description": "Single-line text input",
+      "example": {
+        "id": "firstName",
+        "type": "text",
+        "label": "First Name",
+        "placeholder": "Enter first name",
+        "required": true
+      }
+    },
+    "textarea": {
+      "description": "Multi-line text input",
+      "example": {
+        "id": "description",
+        "type": "textarea",
+        "label": "Description",
+        "placeholder": "Write description...",
+        "required": true,
+        "aiSuggestion": true
+      }
+    },
+    "email": {
+      "description": "Email input with validation",
+      "example": {
+        "id": "email",
+        "type": "email",
+        "label": "Email Address",
+        "placeholder": "your@email.com",
+        "required": true
+      }
+    },
+    "tel": {
+      "description": "Phone number input",
+      "example": {
+        "id": "phone",
+        "type": "tel",
+        "label": "Phone Number",
+        "placeholder": "+91 1234567890",
+        "required": false
+      }
+    },
+    "date": {
+      "description": "Date picker input",
+      "example": {
+        "id": "eventDate",
+        "type": "date",
+        "label": "Event Date",
+        "required": true
+      }
+    },
+    "select": {
+      "description": "Dropdown selection",
+      "example": {
+        "id": "category",
+        "type": "select",
+        "label": "Category",
+        "required": true,
+        "options": [
+          { "value": "option1", "label": "Option 1" },
+          { "value": "option2", "label": "Option 2" }
+        ]
+      }
+    },
+    "color": {
+      "description": "Color picker input",
+      "example": {
+        "id": "themeColor",
+        "type": "color",
+        "label": "Theme Color",
+        "required": true,
+        "defaultValue": "#3B82F6"
+      }
+    },
+    "image": {
+      "description": "Image URL input with preview",
+      "example": {
+        "id": "banner",
+        "type": "image",
+        "label": "Banner Image URL",
+        "placeholder": "https://example.com/image.jpg",
+        "required": false
+      }
+    }
+  }
+}
